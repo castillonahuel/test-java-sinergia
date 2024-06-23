@@ -1,0 +1,142 @@
+/*fondo*/ 
+body{
+    background-color: #3498DB !important;
+    min-height: 100vh;
+    position: relative;
+}
+
+/*formulario*/ 
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 white;
+    max-height: 630px;
+
+  }
+
+
+/*logo*/ 
+.imagen{
+    height: 90px;
+    width: 90px;
+    text-align: center;
+} 
+.jace{
+    font-size: 35px;
+    color: #3498DB;
+    text-align: center;
+}
+.log{
+    visibility: hidden !important;
+}
+
+ /*consulta*/ 
+textarea{
+    resize: none !important;
+    width: 300px; 
+    height: 80px;
+
+}
+/*captcha*/
+.captcha{
+  text-align: center;
+}
+
+ /*links redes sociales*/ 
+.link{
+    color: white;
+   }
+.link:hover{
+ color: black;
+ text-decoration:none;
+}
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/*pie de pagina*/ 
+footer {
+    background-color: #3498DB;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+/*usuario*/   
+.cerrar{
+    display: none !important;
+}
+.entrar{
+    display: block !important;
+}
+.miperfil{
+    display: none !important;
+}
+
+ /*responsive*/ 
+  @media screen and (max-width:1600px) {
+    footer {
+    position: fixed;
+    bottom: -10;
+    width: 100%;
+    height: 40px;
+  }
+  .barrita
+  {
+   height: 50px !important; 
+  }
+  .barra{
+    height: 50px !important;
+    background-color: transparent !important;
+  }
+  .mesayuda{
+    margin-bottom: 80px !important;
+  }
+  .form{
+    max-height: 560px;
+  }
+  .imagen{
+    height: 70px !important;
+    width: 70px !important;
+  } 
+  .titulito{
+    font-size: 30px;
+  }
+  .jace{
+    font-size: 25px;
+  }
+  textarea{
+    width: 300px; 
+    height: 60px;
+  }
+}
+@media screen and (max-height:770px) {
+  .form{
+    max-height: 530px;
+  }
+  .imagen{
+    height: 50px !important;
+    width: 50px !important;
+  } 
+  .titulito{
+    font-size: 25px;
+  }
+  .jace{
+    font-size: 20px;
+    color: #3498DB;
+  }
+}
+/*redes sociales*/
+@media screen and (max-width:500px){
+  .link{
+      font-size: 13px;
+  }
+}

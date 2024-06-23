@@ -1,0 +1,247 @@
+
+body {
+    background: #f1f1f1;
+}
+option {
+    width: 496px !important;
+    white-space:pre-wrap !important; 
+    word-wrap: break-word !important;
+  }
+
+/*BARRA LATERAL costado.php*/
+/*boton de menu lateral cerrado*/
+.btn_menu0{
+    cursor: pointer;
+    padding:10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    color: black;
+}
+/*barra lateral*/
+.barra-lateral {
+    background-color: #3498DB;
+    color: #fff;
+    min-width: 230px;
+    min-height: 100vh;
+   padding: 0;
+}
+.barra-lateral a {
+    color: #fff;   
+}
+.barra-lateral .menu a {
+    display: block;
+    padding: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.barra-lateral .menu a:hover {
+    background-color: #003C5D;
+    text-decoration: none;
+}
+
+.btn_menu{
+    display: none;
+}
+#myDIV{
+    display: block;
+}
+#boton{
+    display: none;
+} 
+/*lista*/
+ul{
+    padding-left: 15px !important; 
+}
+li {
+    list-style: none;
+}
+#titulo{
+    cursor: default;
+}
+#titulo:hover{
+    background-color: transparent;
+}
+/*iconos de lista*/
+.iconos{
+   font-size: 25px;
+   padding-right: 20px; 
+}
+
+
+
+
+/*BARRA SUPERIOR superior.php*/
+/*barra*/
+.barra {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    color: white;
+    font-size: 32px;
+    background-color: #3498DB;
+
+}
+/*logo jacesi*/
+.imagen{
+    height: 90px;
+    width: 90px;
+}
+/*usuario*/
+.dropdown-menu {
+    margin: 17px;
+    background: #262a34;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+.menuperfil {
+    color: white;
+}
+.cerrar:hover {
+    background-color: #3498DB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+.entrar:hover {
+    background-color: #3498DB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+.miperfil:hover {
+    background-color: #3498DB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+.entrar{
+    display: none;
+}
+.user {
+    font-size: 35px;
+}
+
+
+
+
+/*MAIN*/
+.main {
+    padding-top: 40px;
+}
+.main .columna {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.ocultar{
+    display: none;
+}
+
+
+
+/*FORMULARIOS*/
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+
+  }
+
+/*TABLAS*/
+.encabezado{
+    text-align: center;
+}
+/*BOTON EDITAR PRESUPUESTO*/
+.botonesEditar{
+    text-align: center;
+}
+/*BOTON CERRAR PRESUPUESTO*/
+.botonCerrarPresupuesto{
+    text-align: center;
+}
+.conversor{
+    font-size: 21px;
+}
+/*mediaquerys*/
+@media screen and (max-width:1300px) {
+    /*boton de menu lateral abierto*/
+    .btn_menu{
+        cursor: pointer;
+        padding:10px;
+        padding-left: 30px;
+        padding-bottom: 5px;
+        font-size: 30px;
+        color: white;
+        display: block;
+    }
+    #myDIV{
+        display: none;
+    }
+    #boton{
+        display: block;
+    }
+}
+
+
+
+/*mediaquerys
+/*responsive tablas*/
+@media screen and (max-width:1000px){
+    .table{
+        border: 0px;
+        background-color:white;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tr{
+        margin-bottom: 8px;
+        border-bottom: 6px solid #3498DB;
+        display: block;
+    }
+    .table th, table td{
+        font-size: 18px;
+        display: block;
+        border-bottom: 1px solid white;
+        text-align: right;
+    }
+    .table td:last-child{
+        border-bottom: 0px;
+    }
+    .table td::before, .table th::before{
+        content: attr(data-label);
+        float: left;
+    }
+    .encabezado{
+        font-size:25px;
+    }
+   }
+/*responsive barra superior*/
+@media screen and (max-width:600px){
+    /*barra*/
+    .barra {
+        font-size: 20px;
+    }
+    /*logo jacesi*/
+    .imagen{
+        height: 70px;
+        width: 70px;
+    }
+    /*usuario*/
+    .user {
+        font-size: 25px;
+    } 
+    .barra-lateral {
+        width: 100%;
+    }
+    .dropdown-menu{
+        margin-right: 105px;
+    }
+}
+
